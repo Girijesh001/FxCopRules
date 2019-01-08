@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rules>
+ 
+  
+	<Rule TypeName="clsCheck" Category="Database" CheckId="GB01">
+		<Name>Connection object Should be closed</Name>
+		<Description> Connection objects should be closed</Description>
+		<Owner> GB043621</Owner>
+		<Url>http://www.jiralink.com</Url>
+		<Resolution> Call the connection close method </Resolution>
+		<Email></Email>
+		<MessageLevel Certainty="99"> Warning</MessageLevel>
+		<FixCategories> Breaking </FixCategories>
+	</Rule>
+  <Rule TypeName="ClassFieldNamePrefixes" Category="Tutorial" CheckId="TT1010">
+    <Name>Class field names should use the 'm_' and 'g_' suffixes.</Name>
+    <Description>
+      Instance fields in classes should begin with the 'm_' prefix.
+      Static fields in classes should begin with the 'g_' prefix.
+    </Description>
+    <Url></Url>
+    <Resolution Name="Static">Prefix the static field '{0}' with 'm_'.</Resolution>
+    <Resolution Name="Instance">Prefix the instance field '{0}' with 'g_'.</Resolution>
+    <MessageLevel Certainty="95">Warning</MessageLevel>
+    <Email></Email>
+    <FixCategories>Breaking</FixCategories>
+    <Owner></Owner>
+  </Rule>
+  <Rule TypeName="DocumentExternallyVisibleMembers" Category="Tutorial" CheckId="TT1050">
+    <Name>Externally visible members should have doc comments</Name>
+    <Description>
+      Since externally visible members comprise your published API, they should be
+      documented using doc comments in the source code.
+    </Description>
+    <Url></Url>
+    <Resolution>Document the member.</Resolution>
+    <MessageLevel Certainty="95">Warning</MessageLevel>
+    <Email></Email>
+    <FixCategories>NonBreaking</FixCategories>
+    <Owner></Owner>
+  </Rule>
+  <Rule TypeName="SpellCheckStringResources" Category="Tutorial" CheckId="TT1020">
+    <Name>String resources should be spelled correctly</Name>
+    <Description>
+      String resources should be spelled correctly.
+    </Description>
+    <Url>www.cerner.com/SpellCheckStringResources</Url>
+    <Resolution>Check the spelling of the word '{0}'.</Resolution>
+    <MessageLevel Certainty="75">Warning</MessageLevel>
+    <Email></Email>
+    <FixCategories>NonBreaking</FixCategories>
+    <Owner></Owner>
+  </Rule>
+  <Rule TypeName="RemoveEmptyMethods"  Category="Tutorial" CheckId="TT1024">
+    <Name>Remove all empty methods and properties</Name>
+    <Description>Empty methods and properties should be commented or removed.</Description>
+    <Url></Url>
+    <Resolution>All empty methods, functions, and 'set' properties should be commented out or removed. Empty method: '{0}'.</Resolution>
+    <MessageLevel Certainty="99">Warning</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Owner> GB043621</Owner>
+    <Email></Email>
+  </Rule>
+</Rules>
+
